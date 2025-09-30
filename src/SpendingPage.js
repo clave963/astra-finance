@@ -183,7 +183,7 @@ const SpendingPage = () => {
             
             <div className="flex items-center space-x-3">
               <button className="p-3 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-2xl transition-all duration-200">
-                <Download className="w-5 h-5" />
+                {/* <Download className="w-5 h-5" /> */}
               </button>
               <button className="p-3 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-2xl transition-all duration-200">
                 <Bell className="w-5 h-5" />
