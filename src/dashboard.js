@@ -129,9 +129,12 @@ const Dashboard = () => {
   }, [aiInsights.length]);
 
   const MetricCard = ({ title, value, change, icon: Icon, trend, subtitle, isLarge = false }) => (
-    <div className={`group relative bg-white border border-gray-200/80 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1 ${
+    <div className={`group relative bg-white border border-gray-200/80 rounded-3xl p-8 transition-all duration-500 hover:-translate-y-1 overflow-hidden ${
       isLarge ? 'col-span-2' : ''
-    }`} style={{ fontFamily: 'Proxima Nova, system-ui, sans-serif' }}>
+    }`} style={{ 
+      fontFamily: 'Proxima Nova, system-ui, sans-serif',
+      boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)'
+    }}>
       {/* Subtle gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-50/30 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       
@@ -258,7 +261,9 @@ const Dashboard = () => {
         {/* Enhanced AI Coach Insight Banner */}
         <div className="mb-10 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-purple-600/10 via-purple-500/5 to-indigo-600/10 rounded-3xl" />
-          <div className="relative bg-white/80 backdrop-blur-sm border border-purple-200/50 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-500">
+          <div className="relative bg-white/80 backdrop-blur-sm border border-purple-200/50 rounded-3xl p-8 transition-all duration-500 overflow-hidden" style={{
+            boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)'
+          }}>
             <div className="flex items-start space-x-6">
               <div className="flex-shrink-0 relative">
                 <div className="p-4 bg-gradient-to-br from-purple-600 to-purple-700 rounded-3xl shadow-lg">
@@ -340,7 +345,9 @@ const Dashboard = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           {/* Enhanced Cash Flow Chart */}
           <div className="lg:col-span-2">
-            <div className="bg-white border border-gray-200/80 rounded-3xl p-10 shadow-sm hover:shadow-xl transition-all duration-500">
+            <div className="bg-white border border-gray-200/80 rounded-3xl p-10 transition-all duration-500 overflow-hidden" style={{
+              boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)'
+            }}>
               <div className="flex items-center justify-between mb-8">
                 <div>
                   <h2 className="text-3xl font-light text-gray-900 mb-2 tracking-tight">Spending & Income Flow</h2>
@@ -431,7 +438,9 @@ const Dashboard = () => {
 
           {/* Enhanced Spending Categories */}
           <div className="space-y-8">
-            <div className="bg-white border border-gray-200/80 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-500">
+            <div className="bg-white border border-gray-200/80 rounded-3xl p-8 transition-all duration-500 overflow-hidden" style={{
+              boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)'
+            }}>
               <div className="flex items-center justify-between mb-8">
                 <h3 className="text-2xl font-light text-gray-900 tracking-tight">Spending Categories</h3>
                 <button 
@@ -551,7 +560,9 @@ const Dashboard = () => {
         {/* Enhanced Goals Progress & Recent Transactions */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-16">
           {/* Enhanced Financial Goals */}
-          <div className="bg-white border border-gray-200/80 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-500">
+          <div className="bg-white border border-gray-200/80 rounded-3xl p-8 transition-all duration-500 overflow-hidden" style={{
+            boxShadow: "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)"
+          }}>
             <div className="flex items-center justify-between mb-8">
               <h3 className="text-2xl font-light text-gray-900 tracking-tight">Your Financial Goals</h3>
               <button className="text-sm text-purple-600 hover:text-purple-700 font-semibold">Add Goal</button>
@@ -590,7 +601,9 @@ const Dashboard = () => {
           </div>
 
           {/* Enhanced Recent Transactions */}
-          <div className="bg-white border border-gray-200/80 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-500">
+          <div className="bg-white border border-gray-200/80 rounded-3xl p-8 transition-all duration-500 overflow-hidden" style={{
+            boxShadow: "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)"
+          }}>
             <div className="flex items-center justify-between mb-8">
               <h3 className="text-2xl font-light text-gray-900 tracking-tight">Recent Activity</h3>
               <button className="text-sm text-purple-600 hover:text-purple-700 font-semibold">View All</button>

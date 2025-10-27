@@ -208,7 +208,9 @@ const SpendingPage = () => {
           {/* Main Content Area */}
           <div className="flex-1">
             {/* Filters Section */}
-            <div className="mb-8 bg-white border border-gray-200/80 rounded-3xl p-6 shadow-sm">
+            <div className="mb-8 bg-white border border-gray-200/80 rounded-3xl p-6 overflow-hidden" style={{
+              boxShadow: "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)"
+            }}>
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-6">
                   <div>
@@ -251,7 +253,7 @@ const SpendingPage = () => {
             </div>
 
             {/* Transaction History */}
-            <div className="mb-8 bg-white border border-gray-200/80 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-500">
+            <div className="mb-8 bg-white border border-gray-200/80 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
               <div className="flex items-center justify-between mb-6">
                 <h3 className="text-2xl font-light text-gray-900 tracking-tight">Transaction History</h3>
                 <div className="flex items-center space-x-2">
@@ -321,7 +323,7 @@ const SpendingPage = () => {
             </div>
 
             {/* Spending Trends Chart */}
-            <div className="mb-8 bg-white border border-gray-200/80 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-500">
+            <div className="mb-8 bg-white border border-gray-200/80 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
               <div className="flex items-center justify-between mb-8">
                 <div>
                   <h2 className="text-3xl font-light text-gray-900 mb-2 tracking-tight">Weekly Spending Trends</h2>
@@ -362,7 +364,7 @@ const SpendingPage = () => {
             </div>
 
             {/* Category Performance */}
-            <div className="bg-white border border-gray-200/80 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-500">
+            <div className="bg-white border border-gray-200/80 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
               <h3 className="text-2xl font-light text-gray-900 mb-6 tracking-tight">Category Performance</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {categoryComparison.map((category, index) => {
@@ -410,7 +412,9 @@ const SpendingPage = () => {
             <div className="sticky top-24">
               <div className="relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-600/10 to-indigo-600/10 rounded-3xl" />
-                <div className="relative bg-white/80 backdrop-blur-sm border border-purple-200/50 rounded-3xl p-6 shadow-lg">
+                <div className="relative bg-white/80 backdrop-blur-sm border border-purple-200/50 rounded-3xl p-6 overflow-hidden" style={{
+                  boxShadow: '0 2px 8px -2px rgba(0, 0, 0, 0.08), 0 1px 4px -1px rgba(0, 0, 0, 0.06)'
+                }}>
                   <div className="text-center mb-4">
                     <div className="inline-flex p-3 bg-gradient-to-br from-purple-600 to-purple-700 rounded-2xl shadow-lg mb-3">
                       <Sparkles className="w-6 h-6 text-white" />
